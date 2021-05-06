@@ -1,0 +1,207 @@
+@charset "UTF-8";
+html {
+    font-size: 16px;
+    max-width: fit-content;
+}
+html, body {
+    height: 100%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    font-weight: 300;
+    color: black;
+	background-color: white;
+}
+header{
+    height: 80px;
+    max-height: 80px;
+}
+header h1{
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+header img{
+    width: 200px;
+    height: auto;
+}
+.bio{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+@media(min-width:860px){
+    .bio{
+        margin: 0 auto;
+    }
+}
+h2{
+    text-align: center;
+    font-weight: 100;
+}
+p{
+    font-size: 14px;
+}
+.skills{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.skillsflex{
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.skillsimg{
+    text-align: center;
+    margin: 0 auto;
+}
+.skillsimg img{
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: inset 0 10px 25px 0 rgba(138, 137, 137, 0.4);
+    margin-right: 0px;
+    padding: 10px;
+}
+@media(max-width:420px){
+    .skillsimg img{
+        max-width: 76px;
+    }
+}
+.works{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.worksflex{
+    display: flex;
+    min-width: 800px;
+    margin: 0 auto;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.worksimg img{
+    max-width: 380px;
+    height: 100.55px;
+    border-bottom: solid 1px black;
+    border-radius: 9px 9px 0px 0px;
+}
+.worksimg{
+    max-width: 380px;
+    text-align: center;
+    border: solid 1px black;
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+.worksimg p{
+    margin: 8px 6px 8px 6px;
+}
+.button{
+    color: black;
+    border-radius: 4px;
+    padding: 4px 12px 4px 12px;
+}
+
+@media(max-width:860px){
+
+    .works{
+        min-width: 300px;
+    }
+    .worksflex{
+        display: block;
+        min-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .worksimg img{
+        max-width: 300px;
+        height: auto;
+        border-bottom: solid 1px black;
+        border-radius: 9px 9px 0px 0px;
+    }
+    .worksimg{
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+        border: solid 1px black;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .worksimg p{
+        margin: 8px 6px 8px 6px;
+    }
+    .button{
+        color: black;
+        border-radius: 4px;
+        padding: 4px 12px 4px 12px;
+    }
+}
+footer{
+    padding-top: 30px;
+
+}
+footer p{
+    text-align: center;
+    font-size: 14px;
+}
+.links{
+    margin-bottom: 30px;
+}
+/* ボタン全体 */
+.flowbtn6{
+    border-radius:13px;		
+    position:relative;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    font-size:33px;
+    color:#fff!important;
+    transition:.5s;
+    text-decoration:none;
+}	
+/* アイコンをど真ん中に*/
+.flowbtn6 i{
+position:absolute;
+top:50%;
+left:50%;
+-ms-transform:translate(-50%,-50%);
+-webkit-transform:translate(-50%,-50%);
+transform:translate(-50%,-50%);
+}
+/* ulタグの内側余白を０にする */
+ul.snsbtniti{
+padding:0!important;
+list-style-type:none!important;
+}
+/* アイコンボタン全体の位置 */
+.snsbtniti{
+display:flex;
+flex-flow:row wrap;
+justify-content:space-around;
+}
+/* アイコンボタン同士の余白 */
+.snsbtniti li{
+flex:0 0 10%;
+text-align:center!important;
+}
+/* アイコンボタンにマウスを乗せた時 */
+.flowbtn6:hover{
+-webkit-transform:translateY(-5px);
+-ms-transform:translateY(-5px);
+transform:translateY(-5px);
+}
+/* Twitter */
+.fl_tw1{
+background:#55acee;
+}
+/* メール */
+.fl_ma6{
+    background:linear-gradient(135deg, #1B77F1 0%,#19BDFC 100%);	
+}
